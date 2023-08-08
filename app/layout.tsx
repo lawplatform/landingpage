@@ -19,7 +19,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={inter.className}>
 				<Provider>
-					<div className='  text-center items-center justify-center'>
+					<div className='text-center items-center justify-center'>
 						{children}
 					</div></Provider>
 				<Footer />

@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@babylonjs/core':
+    specifier: ^6.15.0
+    version: 6.15.0
+  '@babylonjs/gui':
+    specifier: ^6.15.0
+    version: 6.15.0(@babylonjs/core@6.15.0)
   '@legendapp/state':
     specifier: ^1.8.0
     version: 1.8.0(react@18.2.0)
@@ -47,6 +53,9 @@ dependencies:
   react-animejs:
     specifier: ^0.5.6
     version: 0.5.6(react-dom@18.2.0)(react-scripts@3.4.4)(react@18.2.0)
+  react-babylonjs:
+    specifier: ^3.1.17
+    version: 3.1.17(@babylonjs/core@6.15.0)(@babylonjs/gui@6.15.0)(react-dom@18.2.0)(react@18.2.0)
   react-dom:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
@@ -1580,7 +1589,7 @@ packages:
     dependencies:
       '@babel/core': 7.9.0
       '@babel/helper-plugin-utils': 7.22.5
-      '@babel/plugin-transform-react-display-name': 7.8.3(@babel/core@7.9.0)
+      '@babel/plugin-transform-react-display-name': 7.22.5(@babel/core@7.9.0)
       '@babel/plugin-transform-react-jsx': 7.22.5(@babel/core@7.9.0)
       '@babel/plugin-transform-react-jsx-development': 7.22.5(@babel/core@7.9.0)
       '@babel/plugin-transform-react-jsx-self': 7.22.5(@babel/core@7.9.0)
@@ -1656,6 +1665,18 @@ packages:
       '@babel/helper-string-parser': 7.22.5
       '@babel/helper-validator-identifier': 7.22.5
       to-fast-properties: 2.0.0
+    dev: false
+
+  /@babylonjs/core@6.15.0:
+    resolution: {integrity: sha512-eoeJ3RB6xYC63ZuGGuceF7rrVA1OFIlO3cvBvAxsoBIzxTSLxyhmG4wwktEvCAePxZ7W7CDYNtA061edGWhxUw==}
+    dev: false
+
+  /@babylonjs/gui@6.15.0(@babylonjs/core@6.15.0):
+    resolution: {integrity: sha512-WkR/r8wLbKyzUuXUgcWVaTZO5drxQ8YjkstDRz/ZrhfOTIEFDpidd7onDhaQ9wmekQEpFHcKJejJ1/MLXYLwAg==}
+    peerDependencies:
+      '@babylonjs/core': ^6.0.0
+    dependencies:
+      '@babylonjs/core': 6.15.0
     dev: false
 
   /@cnakazawa/watch@1.0.4:
@@ -5838,7 +5859,7 @@ packages:
     resolution: {integrity: sha512-Xhj93RXbMSq8urNCUq4p9l0P6hnySJ/7YNRhYNug0bLOuii7pKO7xQFb5mx9xZXWCar88pLPb805PvUkwrLZpQ==}
     engines: {node: '>=0.4.0'}
     dependencies:
-      websocket-driver: 0.6.5
+      websocket-driver: 0.7.4
     dev: false
 
   /faye-websocket@0.11.4:
@@ -10367,6 +10388,25 @@ packages:
       whatwg-fetch: 3.6.17
     dev: false
 
+  /react-babylonjs@3.1.17(@babylonjs/core@6.15.0)(@babylonjs/gui@6.15.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-z4RngbrUOp0MZfYPtgVMjvy/mZQml3q8izKRK7UWe4h5gmccuHIg7q/OyL45DsHbUv6f7fjw6MgfCPl591bBVA==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      '@babylonjs/core': 5.x || 6.x
+      '@babylonjs/gui': 5.x || 6.x
+      react: '>=18'
+      react-dom: '>=18'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+    dependencies:
+      '@babylonjs/core': 6.15.0
+      '@babylonjs/gui': 6.15.0(@babylonjs/core@6.15.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-reconciler: 0.27.0(react@18.2.0)
+    dev: false
+
   /react-dev-utils@10.2.1(eslint@8.46.0)(typescript@5.1.6)(webpack@4.42.0):
     resolution: {integrity: sha512-XxTbgJnYZmxuPtY3y/UV0D8/65NKkmaia4rXzViknVnZeVlklSh8u6TnaEYPfAi/Gh1TP4mEOXHI6jQOPbeakQ==}
     engines: {node: '>=8.10'}
@@ -10425,6 +10465,17 @@ packages:
 
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
+  /react-reconciler@0.27.0(react@18.2.0):
+    resolution: {integrity: sha512-HmMDKciQjYmBRGuuhIaKA1ba/7a+UsM5FzOZsMO2JYHt9Jh8reCb7j1eDC95NOyUlKM9KRyvdx0flBuDvYSBoA==}
+    engines: {node: '>=0.10.0'}
+    peerDependencies:
+      react: ^18.0.0
+    dependencies:
+      loose-envify: 1.4.0
+      react: 18.2.0
+      scheduler: 0.21.0
     dev: false
 
   /react-scripts@3.4.4(eslint@8.46.0)(react@18.2.0)(typescript@5.1.6):
@@ -11045,6 +11096,12 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       xmlchars: 2.2.0
+    dev: false
+
+  /scheduler@0.21.0:
+    resolution: {integrity: sha512-1r87x5fz9MXqswA2ERLo0EbOAU74DpIUO090gIasYTqlVoJeMcl+Z1Rg7WHz+qtPujhS/hGIt9kxZOYBV3faRQ==}
+    dependencies:
+      loose-envify: 1.4.0
     dev: false
 
   /scheduler@0.23.0:

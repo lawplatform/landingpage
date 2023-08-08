@@ -1,5 +1,7 @@
 'use client';
 import Btn_learnMore from '@/src/components/B_learnMore';
+import Metaverse from '@/src/pages/Metaverse';
+import Vision from '@/src/pages/Vision';
 import { scrollPercent } from '@/src/util/scrollPercent';
 import anime from 'animejs/lib/anime.es.js';
 import { useEffect } from 'react';
@@ -40,10 +42,8 @@ export default function Home() {
 	return (
 		<>
 
-			<div id="two" style={{ height: 50, width: 50, background: "#d3d" }} />
-			<Btn_learnMore />
-			<div className="hero min-h-screen">vision</div>
-			<div className="hero min-h-screen">metaverse</div>
+			<div className="hero min-h-screen"><Vision /></div>
+			<div className="hero min-h-screen"><Metaverse /></div>
 			<div id="box" className="w-10 bg-red-100">hello</div>
 			<div className="hero min-h-screen">advertise</div>
 		</>
