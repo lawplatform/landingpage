@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Hero() {
 	return (
 		<div className="hero min-h-screen">
-			<Image src="/law.png" alt="hero image" objectFit="cover" objectPosition="center" width="1920" height="1200" />
+			<Image src="/law.png" alt="hero image" width="1920" height="1200" />
 			<div className="hero-overlay bg-opacity-60"></div>
 			<div className="hero-content text-center text-neutral-content">
 				<div className="max-w-md">
