@@ -1,21 +1,25 @@
-export default function Card_feat() {
-	<div className="p-6 bg-gray-100 rounded-lg">
+import Image from "next/image"
 
-		<div className="mb-5">
+interface C_featProp {
+	title: string;
+	img: string;
+	desc: string;
+}
+export default function C_feat({ title, img, desc }: C_featProp) {
+	return (
+		<div className="p-20 bg-dark-blue rounded-lg border border-slate-300 mb-3 mx-10 op mt-10">
 
-			<svg className="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
-			</svg>
+			<div className="flex items-center justify-center mb-5">
+				<Image src={"/icon/" + img + ".svg"} alt="hero image" objectFit="cover" objectPosition="center" width="40" height="40" className="op bg-white  transition-transform transform hover:scale-120" />
 
-		</div>
+			</div>
 
-		<h3 className="text-lg font-bold mb-2">
-			1. Product
-		</h3>
+			<h3 className="text-lg font-bold mb-2">
+				{title}
+			</h3>
 
-		<p className="text-sm leading-6 text-gray-600">
-			Metus potenti velit sollicitudin porttitor magnis elit lacinia tempor varius, ut cras orci vitae parturient id nisi vulputate consectetur, primis venenatis cursus tristique malesuada viverra congue risus.
-		</p>
+			<p className="text-sm leading-6 text-gray-300">
+				{desc}			</p>
 
-	</div>
+		</div>)
 }

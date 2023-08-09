@@ -50,12 +50,11 @@ export default function Vision() {
 					</div>
 					<h1 id="title" className="mt-12 mb-5 text-5xl font-bold op">vison</h1>
 
-					<div className="w-20 px-24">
-						<p className=" py-6 mb-20  op">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa </p>
-
+					<div className="w-12">
+						<p className="mx-52 py-6 op mb-10 ">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident.</p>
 					</div>
 				</div>
-				<div className="mt-10 mb-10 md:flex">
+				<div className="md:flex">
 					<C_feat title="연결" desc="고객과의 연결" img="temp" />
 					<C_feat title="소통" desc="고객과의 연결" img="temp" />
 					<C_feat title="확장" desc="고객과의 연결" img="temp" />

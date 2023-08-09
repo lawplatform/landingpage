@@ -25,6 +25,9 @@ module.exports = {
 				"2xl": "1480px",
 
 			},
+			colors: {
+				'dark-blue': `#242424`
+			},
 			boxShadow: {
 				bannerShadow: "0 1px 2px 1px #00000026"
 			}
