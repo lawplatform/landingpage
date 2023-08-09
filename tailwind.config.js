@@ -11,6 +11,9 @@ module.exports = {
 			contenContainer: "1280px",
 		},
 		extend: {
+			radialGradientColors: {
+				'white-black': ['ellipse at center', 'rgba(255, 255, 255, 0) 0%', 'rgba(255, 255, 255, 1) 40%', 'rgba(0, 0, 0, 1) 100%'],
+			},
 			backgroundImage: {
 			},
 			screens: {
@@ -33,5 +36,6 @@ module.exports = {
 			}
 		},
 	},
-	plugins: [require('daisyui')],
+	plugins: [require('daisyui'),
+	require('tailwindcss-gradients'),],
 }

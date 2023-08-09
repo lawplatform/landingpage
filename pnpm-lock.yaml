@@ -68,6 +68,9 @@ dependencies:
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
+  tailwindcss-gradients:
+    specifier: ^3.0.0
+    version: 3.0.0
   typescript:
     specifier: 5.1.6
     version: 5.1.6
@@ -11901,6 +11904,13 @@ packages:
     dependencies:
       '@pkgr/utils': 2.4.2
       tslib: 2.6.1
+    dev: false
+
+  /tailwindcss-gradients@3.0.0:
+    resolution: {integrity: sha512-EM1OreQggjWW6WuaiHKy02j1ZxgQIEp2zj0cruf4XMZ1RoCBpb1a14i/CiTE9rjl+APk57oCb3l+kbsJy4W4EA==}
+    dependencies:
+      color: 3.2.1
+      lodash: 4.17.21
     dev: false
 
   /tailwindcss@3.3.3:

@@ -12,6 +12,7 @@ const ProductLayout = (props: Props) => {
 		<div>
 			<Navbar />
 			{props.children}
+			<Footer></Footer>
 		</div>
 	);
 };

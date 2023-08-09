@@ -22,7 +22,6 @@ export default function RootLayout({
 					<div className='text-center items-center justify-center'>
 						{children}
 					</div></Provider>
-				<Footer />
 			</body>
 		</html>
 	)
