@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Btn_learnMore from "../components/B_learnMore";
 import EnterScene from "../world/EnterScene";
-import anime from 'animejs/lib/anime.es.js';
+import anime from 'animejs/lib/anime.js';
 import C_feat from "../components/C_feat";
 
 

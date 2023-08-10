@@ -2,7 +2,7 @@ import Image from "next/image"
 import Des from "../components/Des"
 import DesWIcon from "../components/DesWIcon"
 import { useEffect } from "react";
-import anime from 'animejs/lib/anime.es.js';
+import anime from 'animejs/lib/anime.js';
 import C_feat from "../components/C_feat";
 
 export default function Vision() {
