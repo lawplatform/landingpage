@@ -3,8 +3,7 @@ import Btn_learnMore from "../components/B_learnMore";
 import EnterScene from "../world/EnterScene";
 import anime from 'animejs/lib/anime.js';
 import C_feat from "../components/C_feat";
-
-
+import Des from "../components/Des";
 export default function Metaverse() {
 
 
@@ -40,31 +39,15 @@ export default function Metaverse() {
 	}, [])
 
 	return (
-		<div className="min-w-screen bg-base-200 flex items-center p-5 lg:p-10 overflow-hidden relative ">
-			<div className="w-full max-w-6xl rounded bg-white shadow-xl p-10 lg:p-20 mx-auto text-gray-800 relative md:text-left">
-				<div className="md:flex items-center -mx-10">
-					<div className="w-full md:w-1/2 px-10 mb-10 md:mb-0">
-						<div className="relative">
-							<div className="w-[699px] bg-red-100 op">
-								<EnterScene />
-							</div>
-
-
-
-
-						</div>
-					</div>
-					<div className="w-full md:w-1/2 px-10">
-						<div className="mb-10">
-							<h1 className="op font-bold uppercase text-2xl mb-5 text-black"> Metaverse</h1>
-							<p className="op text-md ">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Eos, voluptatum dolorum! Laborum blandi</p>
-							<Btn_learnMore />
-						</div>
-
-					</div>
+		<div className=" min-h-screen bg-red-100 py-20 mx-auto w-full" >
+			<div className="flex flex-col sm:flex-row w-full sm:px-14 justify-between text-left ">
+				<EnterScene />
+				<div className="bg-blue-100 mx-auto">
+					<Des Title={"Metaverse"} Text={"I like you"}></Des>
 				</div>
+
 			</div>
-		</div >
+		</div>
 	)
 }
 

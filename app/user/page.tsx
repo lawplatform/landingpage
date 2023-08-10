@@ -6,6 +6,7 @@ export default function Home() {
 			<div>This is User Info page..! hello User..!</div>
 			<div>show 3d room</div>
 			<div> show product list </div>
+			<div> show product list </div>
 
 
 		</>

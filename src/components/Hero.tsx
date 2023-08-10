@@ -11,7 +11,7 @@ export default function Hero() {
 				<div className="absolute inset-0 bg-radial-gradient"></div>
 				<div className="flex flex-col items-center justify-center h-full text-center text-white">
 					<div className="absolute">
-						<h1 className="mb-5 text-8xl font-bold ">Lawplatform</h1>
+						<h1 className="mb-5 text-8xl font-bold ">LAWPLATFORM</h1>
 						<p className="mb-5 bg-black ">
 							Provident cupiditate voluptatem et in. </p>
 						<p>Quaerat fugiat ut assumenda excepturi exercitationem quasi.</p>

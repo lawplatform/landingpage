@@ -1,5 +1,4 @@
 import Footer from '@/src/components/Footer';
-import Header from '@/src/components/Header';
 import Navbar from '@/src/components/Navbar';
 import { ReactNode } from 'react';
 

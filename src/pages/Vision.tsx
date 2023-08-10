@@ -20,9 +20,7 @@ export default function Vision() {
 		const intersectionObserver = new IntersectionObserver((entries, observer) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
-					console.log("did you see me? ");
 					scrollAnimation.play();
-					console.log("animation end");
 
 				}
 			});
@@ -50,7 +48,7 @@ export default function Vision() {
 					</div>
 					<h1 id="title" className="mt-12 mb-5 text-5xl font-bold op">vison</h1>
 
-					<div className="w-20 px-24">
+					<div className=" px-24">
 						<p className=" py-6 mb-20  op">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa </p>
 
 					</div>
