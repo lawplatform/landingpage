@@ -1,3 +1,4 @@
+import Image from "next/image"
 export default function H_LPRT() {
 	return (
 		<div className="min-w-screen min-h-screen bg-yellow-300 flex items-center p-5 lg:p-10 overflow-hidden relative">
