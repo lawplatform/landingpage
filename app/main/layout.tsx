@@ -8,7 +8,7 @@ interface Props {
 
 const ProductLayout = (props: Props) => {
 	return (
-		<div className='max-w-xl  px-2 sm:px-24'>
+		<div className='max-w-xl  px-2 sm:px-52'>
 			<Navbar />
 			{props.children}
 			<Footer></Footer>

@@ -1,87 +1,23 @@
-"use client";
-import Btn_learnMore from "@/src/components/B_learnMore";
-import C_wNumber from "@/src/components/C_wNumber";
-import Des from "@/src/components/Des";
-import Container from "@/src/pages/Container";
-import Metaverse from "@/src/pages/Metaverse";
-import Vision from "@/src/pages/Vision";
-import ThemeChange from "@/src/util/ThemeChange";
-import { scrollPercent } from "@/src/util/scrollPercent";
-import EnterScene from "@/src/world/EnterScene";
-import anime from "animejs/lib/anime.js";
-import { useEffect } from "react";
-import { themeChange } from 'theme-change'
+interface G_normalprop {
+	img: string;
+	name: string;
+	type: string;
 
+}
+export default function G_normal() {
 
-
-export default function Home() {
-	useEffect(() => {
-		themeChange(false)
-		var scrollAnimation = anime({
-			targets: "#box",
-			translateY: [-100, 0],
-			delay: 200,
-		});
-		const element = document.querySelector("#box");
-		const intersectionObserver = new IntersectionObserver(
-			(entries, observer) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						scrollAnimation.play();
-					}
-				});
-			}
-		);
-		if (element != null) {
-			console.log("element is loaded");
-			intersectionObserver.observe(element);
-		}
-		return () => {
-			if (element != null) {
-				intersectionObserver.unobserve(element);
-			}
-		};
-	}, []);
 	return (
-		<>
-			<div className="min-h-screen">
-				<Vision />
+		<a href="#"
+			className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+			<img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Minh Pham" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+			arstast
+			<div
+				className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
 			</div>
 
+			<span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">VR</span>
+		</a>
+	)
 
-			<div className=" min-h-screen  py-20 mx-auto bg-base-content" >
-				<div className="flex flex-col sm:flex-row sm:px-14 justify-between text-left ">
-					<div className="w-full min-w-[300px] sm:w-[900px] ">
-						<EnterScene />
-					</div>
-					<div className=" mx-auto mt-10 ">
-						<Des Title={"Metaverse"} Text={"make new world for metaverss"}></Des>
-						<Btn_learnMore />
-					</div>
-
-
-
-				</div>
-
-				<div className="divider" />
-				<div className="flex flex-col sm:flex-row justify-center">
-					<C_wNumber number="1" title="Ustory" text="학교 및 공공기관 홍보 공간 제작" />
-
-					<C_wNumber number="2" title="zepeto" text="학교 및 공공기관 홍보 공간 제작" />
-
-					<C_wNumber number="2" title="zep" text="학교 및 공공기관 홍보 공간 제작" />
-
-				</div>
-
-			</div>
-
-
-
-			<div className=" min-h-screen mt-5">advertise
-				<Des Title={"홍보공간의 재창조"} Text={"빼빼로 먹고싶당  "}></Des>
-
-
-			</div>
-		</>
-	);
 }

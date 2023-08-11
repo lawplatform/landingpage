@@ -14,11 +14,11 @@ import { themeChange } from "theme-change";
 
 export default function Home() {
 	useEffect(() => {
-		themeChange(false)
+		themeChange(false);
 		var scrollAnimation = anime({
 			targets: "#box",
-			translateY: [-100, 0],
-			delay: 200,
+			translateY: [100, 0],
+			delay: anime.stagger(100),
 		});
 		const element = document.querySelector("#box");
 		const intersectionObserver = new IntersectionObserver(
@@ -31,7 +31,6 @@ export default function Home() {
 			}
 		);
 		if (element != null) {
-			console.log("element is loaded");
 			intersectionObserver.observe(element);
 		}
 		return () => {
@@ -47,25 +46,38 @@ export default function Home() {
 				<Vision />
 			</div>
 
-			<div className="min-h-screen  py-20 mx-auto bg-base-content" >
+			<div className="min-h-screen  py-20 mx-auto bg-base-content">
 				<div className="flex flex-col sm:flex-row sm:px-14 justify-between text-left ">
 					<div className="w-full min-w-full sm:w-[900px]">
-						<EnterScene />
 						<Des Title={"Metaverse"} Text={"make new world for metaverss"} />
+						<EnterScene />
 						<Btn_learnMore />
 					</div>
 				</div>
 
 				<div className="divider" />
 				<div className="flex flex-col sm:flex-row justify-center">
-					<C_wNumber number="1" title="Ustory" text="학교 및 공공기관 홍보 공간 제작" />
-					<C_wNumber number="2" title="zepeto" text="학교 및 공공기관 홍보 공간 제작" />
-					<C_wNumber number="2" title="zep" text="학교 및 공공기관 홍보 공간 제작" />
+					<C_wNumber
+						number="1"
+						title="Ustory"
+						text="학교 및 공공기관 홍보 공간 제작"
+					/>
+					<C_wNumber
+						number="2"
+						title="zepeto"
+						text="학교 및 공공기관 홍보 공간 제작"
+					/>
+					<C_wNumber
+						number="2"
+						title="zep"
+						text="학교 및 공공기관 홍보 공간 제작"
+					/>
 				</div>
 			</div>
 
-			<div className=" min-h-screen mt-5">advertiserst
-				<Des Title={"홍보공간의 재창조"} Text={"빼빼로 먹고싶당  "} />
+			<div className=" min-h-screen mt-5">
+				advertiserst
+				<Des Title={"홍보공간의 재창조"} Text={"어떤 좋은 말"} />
 			</div>
 		</>
 	);

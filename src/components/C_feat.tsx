@@ -10,7 +10,7 @@ export default function C_feat({ title, img, desc }: C_featProp) {
 		<div className="p-10 bg-base-100 w-56 rounded-lg border border-slate-300 mb-3 mx-10 op mt-10">
 
 			<div className="flex items-center justify-center mb-5">
-				<Image src={"/icon/" + img + ".svg"} alt="hero image" objectFit="cover" objectPosition="center" width="40" height="40" className="op bg-white  transition-transform transform hover:scale-120" />
+				<Image src={"/icon/" + img + ".svg"} alt="hero image" objectFit="cover" objectPosition="center" width="40" height="40" className=" bg-white  transition-transform transform hover:scale-120" />
 
 			</div>
 
