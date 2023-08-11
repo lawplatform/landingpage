@@ -51,11 +51,14 @@ export default function Home() {
 
 			<div className=" min-h-screen  py-20 mx-auto bg-base-content" >
 				<div className="flex flex-col sm:flex-row sm:px-14 justify-between text-left ">
-					<div className="w-full min-w-full sm:w-[900px] ">
+					<div className="w-full min-w-[300px] sm:w-[900px] ">
 						<EnterScene />
+					</div>
+					<div className=" mx-auto mt-10 ">
 						<Des Title={"Metaverse"} Text={"make new world for metaverss"}></Des>
 						<Btn_learnMore />
 					</div>
+
 
 
 				</div>

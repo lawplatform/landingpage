@@ -87,7 +87,7 @@ const SceneComponent: FC<SceneComponentProps> = (props) => {
 	]);
 
 	return (
-		<canvas id={canvasId} ref={reactCanvas} {...rest} className="w-full" />
+		<canvas id={canvasId} ref={reactCanvas} {...rest} className="w-full rounded-lg" />
 	);
 };
 

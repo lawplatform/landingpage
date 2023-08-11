@@ -44,19 +44,19 @@ export default function Vision() {
 			<div className="mx-auto items-center justify-center flex flex-col lg:flex-row mb-3 px-2 lg:px-10">
 				<div className="flex flex-col items-center w-2/3">
 					<div className="flex items-center justify-center">
-						<Image src="/temp/temp.png" alt="hero image" objectFit="cover" objectPosition="center" width="500" height="500" className="op mb-5" />
+						<Image src={"/temp/world.svg"} width="100" height="80" alt={""}></Image>
 					</div>
-					<h1 id="title" className="mt-12 mb-5 text-5xl font-bold op">vison</h1>
+					<h1 id="title" className="mt-12 mb-5 text-4xl font-extrabold tracking-tight leading-none text-primary-content-900 md:text-5xl lg:text-6xl dark:text-whiteop">vison</h1>
 
 					<div className=" px-24">
-						<p className=" py-6 mb-20  op">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa </p>
+						<p className=" py-6 mb-20  op">메타버스를 통한 혁신과 성장을 실현합니다 </p>
 
 					</div>
 				</div>
 				<div className="mt-10 mb-10 md:flex">
-					<C_feat title="연결" desc="고객과의 연결" img="temp" />
-					<C_feat title="소통" desc="고객과의 연결" img="temp" />
-					<C_feat title="확장" desc="고객과의 연결" img="temp" />
+					<C_feat title="혁신" desc="새로운 경험과 기술을 탐구하여 끊임없이 발전" img="temp" />
+					<C_feat title="다양성" desc="다양성 있는 환경 상호작용을 촉진하며, 포용적인 문화 구축" img="temp" />
+					<C_feat title="신뢰" desc="사용자들과 협력 파트너들과의 소통을 통해 신뢰를 구축하고, 공정한 관리와 운영을 지향" img="temp" />
 				</div>
 			</div >
 		</>

@@ -24,6 +24,9 @@ module.exports = {
 				bannerShadow: "0 1px 2px 1px #00000026"
 			}
 		},
+		daisyui: {
+			themes: ["light", "dark", "cupcake"],
+		},
 	},
 	plugins: [require('daisyui'),
 	require('tailwindcss-gradients'),],
