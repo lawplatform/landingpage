@@ -49,7 +49,7 @@ export default function Home() {
 			<div className=" min-h-screen bg-base-100">
 				{/* 상담 봇 서비스   */}
 
-				<div> hello I'm cyber avatar.. :) </div>
+				<div> hello Im cyber avatar.. :) </div>
 				{/* 상담 봇 서비스   */}
 			</div>
 			<div className=" min-h-screen bg-white">

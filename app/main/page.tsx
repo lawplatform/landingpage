@@ -10,9 +10,7 @@ import { scrollPercent } from "@/src/util/scrollPercent";
 import EnterScene from "@/src/world/EnterScene";
 import anime from "animejs/lib/anime.js";
 import { useEffect } from "react";
-import { themeChange } from 'theme-change'
-
-
+import { themeChange } from "theme-change";
 
 export default function Home() {
 	useEffect(() => {
@@ -42,42 +40,32 @@ export default function Home() {
 			}
 		};
 	}, []);
+
 	return (
 		<>
 			<div className="min-h-screen">
 				<Vision />
 			</div>
 
-
-			<div className=" min-h-screen  py-20 mx-auto bg-base-content" >
+			<div className="min-h-screen  py-20 mx-auto bg-base-content" >
 				<div className="flex flex-col sm:flex-row sm:px-14 justify-between text-left ">
-					<div className="w-full min-w-full sm:w-[900px] ">
+					<div className="w-full min-w-full sm:w-[900px]">
 						<EnterScene />
-						<Des Title={"Metaverse"} Text={"make new world for metaverss"}></Des>
+						<Des Title={"Metaverse"} Text={"make new world for metaverss"} />
 						<Btn_learnMore />
 					</div>
-
-
 				</div>
 
 				<div className="divider" />
 				<div className="flex flex-col sm:flex-row justify-center">
 					<C_wNumber number="1" title="Ustory" text="학교 및 공공기관 홍보 공간 제작" />
-
 					<C_wNumber number="2" title="zepeto" text="학교 및 공공기관 홍보 공간 제작" />
-
 					<C_wNumber number="2" title="zep" text="학교 및 공공기관 홍보 공간 제작" />
-
 				</div>
-
 			</div>
 
-
-
-			<div className=" min-h-screen mt-5">advertise
-				<Des Title={"홍보공간의 재창조"} Text={"빼빼로 먹고싶당  "}></Des>
-
-
+			<div className=" min-h-screen mt-5">advertiserst
+				<Des Title={"홍보공간의 재창조"} Text={"빼빼로 먹고싶당  "} />
 			</div>
 		</>
 	);
