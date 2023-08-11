@@ -11,15 +11,14 @@ export default function Hero() {
 				<div className="absolute inset-0 bg-radial-gradient"></div>
 				<div className="flex flex-col items-center justify-center h-full text-center text-white">
 					<div className="absolute">
-						<h1 className="mb-5 text-8xl font-bold ">LAWPLATFORM</h1>
-						<p className="mb-5 bg-black ">
-							Provident cupiditate voluptatem et in. </p>
-						<p>Quaerat fugiat ut assumenda excepturi exercitationem quasi.</p>
-						<p className="mb-5">	In deleniti eaque aut repudiandae et a id nisi.
-						</p>
-						<Link href={{ pathname: "/main" }}>
-							<button className="btn btn-neutral">들어가기</button>
-						</Link>
+						<div className="flex flex-col justify-center">
+							<Image src="/logo/logo.png" alt="logo" width="300" height="200" className="transition-transform duration-300 ease-in-out transform hover:scale-110"></Image>
+							<div className="mb-5 w-50 bg-low-dark">
+								새로운  세상을 열다 </div>
+							<Link href={{ pathname: "/main" }}>
+								<button className="btn btn-neutral">들어가기</button>
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>

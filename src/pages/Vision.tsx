@@ -46,7 +46,7 @@ export default function Vision() {
 					<div className="flex items-center justify-center">
 						<Image src={"/temp/world.svg"} width="100" height="80" alt={""}></Image>
 					</div>
-					<h1 id="title" className="mt-12 mb-5 text-4xl font-extrabold tracking-tight leading-none text-primary-content-900 md:text-5xl lg:text-6xl dark:text-whiteop">vison</h1>
+					<h1 id="title" className="mt-12 mb-5 text-4xl font-extrabold tracking-tight leading-none text-primary-content-900 md:text-5xl lg:text-6xl dark:text-whiteop">VISION</h1>
 
 					<div className=" px-24">
 						<p className=" py-6 mb-20  op">제약을 뛰어넘는 혁신과 성장을 실현합니다 </p>

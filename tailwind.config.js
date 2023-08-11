@@ -18,7 +18,8 @@ module.exports = {
 			},
 
 			colors: {
-				'dark-blue': `#242424`
+				'dark-blue': `#242424`,
+				'low-dark': '#07478f'
 			},
 			boxShadow: {
 				bannerShadow: "0 1px 2px 1px #00000026"

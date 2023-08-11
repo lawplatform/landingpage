@@ -4,13 +4,15 @@ import G_normal from "@/src/components/G_normal";
 import T_1 from "@/src/components/T_1";
 import T_1_dark from "@/src/components/T_1_dark";
 import Conssul from "@/src/pages/Conssul";
+import Gallery from "@/src/pages/Gallery";
+import Gallery_dy from "@/src/pages/Gallery_dy";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
 	return (
 		<>
-			<div className=" min-h-screen">
+			<div className=" min-h-screen px-2 sm:px-20">
 				{/* 컨썰 */}
 
 				<T_1 title={"컨썰"} text={"컨썰턴트와 썰을 풀다"}></T_1>
@@ -31,7 +33,7 @@ export default function Home() {
 						</Link>
 					</div>
 				</div>
-				<div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-1 sm:gap-4">
+				<div className="mx-auto grid grid-cols-2 md:grid-cols-3 gap-1 sm:gap-4">
 
 					<C_feat_v img={"temp"} title={"기능1"} text={"장점2"} />
 					<C_feat_v img={"temp"} title={"기능1"} text={"장점2"} />
@@ -40,14 +42,15 @@ export default function Home() {
 					<C_feat_v img={"temp"} title={"기능1"} text={"장점2"} />
 					<C_feat_v img={"temp"} title={"기능1"} text={"장점2"} />
 				</div>
+
 				{/* 컨썰 */}
 
 			</div>
 			<T_1 title={"Metaverse"} text={"메타버스에서 만나는 홍보공간 "}></T_1>
-			<div className="min-h-screen bg-base-content">
+			<div className="min-h-screen ">
 
 				{/* 메타버스 */}
-				<div className="mt-5 mx-5 sm:mx-20 grid grid-cols-2 gap-2 sm:gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8 py-10">
+				<div className="mt-5 mx-5 sm:mx-20 grid grid-cols-1 gap-3 sm:gap-4 sm:grid-cols-2 md:gap-6 xl:gap-8 py-10">
 
 					{/*갤러리 작업 */}
 					<G_normal />
