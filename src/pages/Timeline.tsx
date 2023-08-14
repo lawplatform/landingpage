@@ -1,23 +1,47 @@
+import { useEffect } from "react";
+import L_timeline from "../components/L_timeline";
+import anime from 'animejs/lib/anime.js';
+
+
 export default function Timeline() {
+	useEffect(() => {
+		var scrollAnimation = anime({
+			targets: '.op',
+			translateX: [-40, 0],
+			opacity: [0, 1],
+			easing: 'easeInOutExpo',
+			delay: anime.stagger(100)
+		});
+		const element = document.querySelector('.op')
+		const intersectionObserver = new IntersectionObserver((entries, observer) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					scrollAnimation.play();
+
+				}
+			});
+		});
+		if (element != null) {
+			intersectionObserver.observe(element)
+
+
+		}
+		return () => {
+			if (element != null) {
+				intersectionObserver.unobserve(element);
+			}
+		}
+
+	}, [])
 	return (
-		<li>
 
-			<div className="flex-start flex items-center pt-2">
-				<div
-					className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"></div>
-				<p className="text-sm text-neutral-500 dark:text-neutral-300">
-					13.09.2021
-				</p>
-			</div>
-			<div className="mb-6 ml-4 mt-2">
-				<h4 className="mb-1.5 text-xl font-semibold">Title of section 2</h4>
-				<p className="mb-3 text-neutral-500 dark:text-neutral-300">
-					Libero expedita explicabo eius fugiat quia aspernatur autem
-					laudantium error architecto recusandae natus sapiente sit nam
-					eaque, consectetur porro molestiae ipsam an deleniti.
-				</p>
-			</div>
-		</li>
+		<ol className="border-l border-neutral-300 dark:border-neutral-500">
+			{/* timeline */}
 
+			<L_timeline day={"2023.1.1"} title={"로플랫폼"} text={"회사 설립"}></L_timeline>
+			<L_timeline day={"2023.3.2"} title={"youstory 공식 파트너십 "} text={"메타버스 플랫폼 youstory와 공식 파트너십 체결 및 업무 협조 "}></L_timeline>
+
+			<L_timeline day={"2023.6.3"} title={"백송고등학교 업무 협약 "} text={"메타버스 플랫폼 youstory와 공식 파트너십 협약 및 업무 협조 "}></L_timeline>
+		</ol>
 	)
 }
