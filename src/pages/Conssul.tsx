@@ -24,10 +24,10 @@ export default function Conssul() {
 				</div>
 			</div>
 			<div className="w-full md:w-1/2 ">
-				<Des Title={"컨썰"} Text={"컨썰턴트와 썰을 풀다"}></Des>
+				<Des Title={"컨썰"} Text={"세상의 모든 컨설턴트"}></Des>
 
 
-				<p>메타버스 공간을 활용한 중계 플랫폼 서비스</p>
+				<p>메타버스 공간을 활용한 상담 플랫폼 서비스</p>
 				<button className="btn btn-neutral mt-5 mb-5">방문하기 </button>
 			</div>
 		</div>
