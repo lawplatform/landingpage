@@ -2,26 +2,19 @@
 import Btn_learnMore from "@/src/components/B_learnMore";
 import C_wNumber from "@/src/components/C_wNumber";
 import Des from "@/src/components/Des";
-import Container from "@/src/pages/Container";
-import Metaverse from "@/src/pages/Metaverse";
 import Vision from "@/src/pages/Vision";
-import ThemeChange from "@/src/util/ThemeChange";
-import { scrollPercent } from "@/src/util/scrollPercent";
 import EnterScene from "@/src/world/EnterScene";
 import anime from "animejs/lib/anime.js";
 import { useEffect } from "react";
 import { themeChange } from "theme-change";
 import Image from "next/image"
-import L_timeline from "@/src/components/L_timeline";
 import Timeline from "@/src/pages/Timeline";
-
-
 
 export default function Home() {
 	useEffect(() => {
 		themeChange(false);
 		var scrollAnimation = anime({
-			targets: "#box",
+			targets: ".op",
 			translateY: [100, 0],
 			delay: anime.stagger(100),
 		});
@@ -103,20 +96,9 @@ export default function Home() {
 			</div>
 			<h1 id="title" className="mt-12 mb-5 text-4xl font-extrabold tracking-tight leading-none text-accent-content md:text-5xl lg:text-6xl  op">History</h1>
 			<div className="divider"></div>
-			<div className=" min-h-screen mt-5  px-10 py-10 rounded-lg mb-5">
-				<div className="mx-auto text-center font-light sm:text-lg dark:text-gray-400">
-
-
-				</div>
-
+			<div className=" min-h-screen mt-5  px-10 py-10 rounded-lg mb-5 max-w-[700px] mx-auto">
+				<div className="mx-auto text-center font-light sm:text-lg dark:text-gray-400"></div>
 				<Timeline />
-
-
-
-
-
-
-
 			</div>
 		</>
 	);

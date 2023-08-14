@@ -44,15 +44,16 @@ export default function Hero() {
 				<div className="flex flex-col items-center justify-center h-full text-center text-white">
 					<div className="absolute">
 						<div className="flex flex-col justify-center">
-							<Link href={{ pathname: "/main" }}>
-								<Image src="/logo/logo.png" alt="logo" width="300" height="200" className="transition-transform duration-300 ease-in-out transform hover:scale-110 logo " ></Image>
-							</Link>
+							<Image src="/logo/logo.png" alt="logo" width="300" height="200" className="transition-transform duration-300 ease-in-out transform hover:scale-110 logo " ></Image>
 							<div className="mb-5 w-50 bg-low-dark">
 								새로운  세상을 열다 </div>
+							<Link href={{ pathname: "/main" }}>
+								<div className="rounded-full  bg-low-dark w-56 mx-auto"> 들어가기 </div>
+							</Link>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div >
+		</div>
 	)
 }

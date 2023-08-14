@@ -16,31 +16,15 @@ export default function Home() {
 				{/* 컨썰 */}
 
 				<T_1 title={"컨썰"} text={"컨썰턴트와 썰을 풀다"}></T_1>
-				<div className="md:flex items-center py-20">
-					<div className="w-full md:w-1/2 mb-10 md:mb-0">
-						<div className="w-ful bg-red-100">arst</div>
-					</div>
-					<div className="w-full md:w-1/2">
+				<Conssul></Conssul>
+				<div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-1 sm:gap-4">
 
-						<ul>
-							<li>메타버스 공간을 활용한 중계 플랫폼 서비스</li>
-							<li>메타버스를 통한 경험과 지식을 나눌수 있는 가상의 공간 제공</li>
-							<li>자료 관리를 위한 자료실</li>
-							<li> 유연한 스케줄링 제공</li>
-						</ul>
-						<Link href="http://conssul.kr">
-							<button className="btn btn-neutral mt-5">방문하기 </button>
-						</Link>
-					</div>
-				</div>
-				<div className="mx-auto grid grid-cols-2 md:grid-cols-3 gap-1 sm:gap-4">
-
-					<C_feat_v img={"temp"} title={"기능1"} text={"장점2"} />
-					<C_feat_v img={"temp"} title={"기능1"} text={"장점2"} />
-					<C_feat_v img={"temp"} title={"기능1"} text={"장점2"} />
-					<C_feat_v img={"temp"} title={"기능1"} text={"장점2"} />
-					<C_feat_v img={"temp"} title={"기능1"} text={"장점2"} />
-					<C_feat_v img={"temp"} title={"기능1"} text={"장점2"} />
+					<C_feat_v img={"temp"} title={"메타버스 공간 상담 플랫폼"} text={"홍보에 필요한 메타버스 공간 제작"} />
+					<C_feat_v img={"temp"} title={"자료실 기능"} text={"자료 관리를 위한 자료실 제공"} />
+					<C_feat_v img={"temp"} title={"상담사를 위한 일정관리 "} text={"30분 단위로 유연한 스케줄 관리"} />
+					<C_feat_v img={"temp"} title={"통합 컨설팅 솔루션"} text={"입시, 법률, 세무.. 모든 상담 관리"} />
+					<C_feat_v img={"temp"} title={"수수료 무료"} text={"상담사를 위한 수수료 무료 서비스"} />
+					<C_feat_v img={"temp"} title={"다양한 공간 제공"} text={"36가지 youstory 기본 테마 제공"} />
 				</div>
 
 				{/* 컨썰 */}
@@ -53,6 +37,8 @@ export default function Home() {
 				<div className="mt-5 mx-5 sm:mx-20 grid grid-cols-1 gap-3 sm:gap-4 sm:grid-cols-2 md:gap-6 xl:gap-8 py-10">
 
 					{/*갤러리 작업 */}
+
+					<Gallery></Gallery>
 
 				</div>
 

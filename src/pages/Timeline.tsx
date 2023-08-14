@@ -6,13 +6,13 @@ import anime from 'animejs/lib/anime.js';
 export default function Timeline() {
 	useEffect(() => {
 		var scrollAnimation = anime({
-			targets: '.op',
+			targets: '.foot',
 			translateX: [-40, 0],
 			opacity: [0, 1],
 			easing: 'easeInOutExpo',
 			delay: anime.stagger(100)
 		});
-		const element = document.querySelector('.op')
+		const element = document.querySelector('.foot')
 		const intersectionObserver = new IntersectionObserver((entries, observer) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
