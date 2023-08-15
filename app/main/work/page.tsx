@@ -37,6 +37,10 @@ export default function Home() {
 				<div className="mt-5 mx-5 sm:mx-20 grid grid-cols-1 gap-3 sm:gap-4 sm:grid-cols-2 md:gap-6 xl:gap-8 py-10">
 
 					{/*갤러리 작업 */}
+					<video autoPlay muted loop>
+						<source src="/metaverse.mp4" type="video/mp4" />
+						{/* Fallback content */}
+					</video>
 
 					<Gallery></Gallery>
 
