@@ -1,21 +1,30 @@
+"use client";
 import C_feat_v from "@/src/components/C_feat_v";
-import C_gallery from "@/src/components/C_gallery";
-import Des from "@/src/components/Des";
-import G_normal from "@/src/components/G_normal";
 import T_1 from "@/src/components/T_1";
-import T_1_dark from "@/src/components/T_1_dark";
 import Conssul from "@/src/pages/Conssul";
 import Gallery from "@/src/pages/Gallery";
-import Gallery_dy from "@/src/pages/Gallery_dy";
-import Image from "next/image";
-import Link from "next/link";
-
+import { useEffect } from "react";
+import anime from 'animejs/lib/anime.js';
 export default function Home() {
+
+	useEffect(() => {
+		var scrollAnimation = anime({
+			targets: ".feat",
+			opacity: [0, 100],
+			translateY: [0, 1],
+			delay: anime.stagger(100),
+			easing: 'easeInOutQuart',
+		});
+		scrollAnimation.play();
+		return () => {
+		};
+	}, []);
+
+
 	return (
 		<>
 			<div className=" min-h-screen px-2 sm:px-20">
 				{/* 컨썰 */}
-
 				<T_1 title={"컨썰"} text={"컨썰턴트와 썰을 풀다"}></T_1>
 				<Conssul></Conssul>
 				<div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-1 sm:gap-4">
@@ -35,7 +44,6 @@ export default function Home() {
 
 			<div className="min-h-screen ">
 
-				<C_gallery img={"bo"} title={"office"}></C_gallery>
 
 				{/*갤러리 작업 */}
 				<Gallery></Gallery>

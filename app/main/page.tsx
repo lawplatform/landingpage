@@ -1,22 +1,22 @@
 "use client";
 import Btn_learnMore from "@/src/components/B_learnMore";
-import C_wNumber from "@/src/components/C_wNumber";
 import Des from "@/src/components/Des";
 import Vision from "@/src/pages/Vision";
 import EnterScene from "@/src/world/EnterScene";
 import anime from "animejs/lib/anime.js";
 import { useEffect } from "react";
 import { themeChange } from "theme-change";
-import Image from "next/image"
 import Timeline from "@/src/pages/Timeline";
+import Metaverse from "@/src/pages/Metaverse";
 
 export default function Home() {
 	useEffect(() => {
 		themeChange(false);
 		var scrollAnimation = anime({
 			targets: ".op",
-			translateY: [100, 0],
+			opacity: [0, 100],
 			delay: anime.stagger(100),
+			easing: 'easeInOutSine'
 		});
 		const element = document.querySelector("#box");
 		const intersectionObserver = new IntersectionObserver(
@@ -53,44 +53,7 @@ export default function Home() {
 						<EnterScene />
 						<Btn_learnMore />
 						<div className="divider mt-10"></div>
-						<div className="flex flex-col sm:flex-row text-white justify-center px-10">
-							<div className=" rounded-lg op">
-								<Image src={"/space/academy.png"} alt={"school"} width="400" height="300"></Image>
-							</div>
-							<div className="mx-10 w-xl ">		<C_wNumber
-								number="1"
-								title="메타버스 공간 제작"
-								text="메타버스를 통해 다양한 고객들을 만나보세요"
-
-							/></div>
-						</div>
-
-						<div className="flex flex-col-reverse sm:flex-row text-white justify-center px-10 mt-20">
-							<div className="mx-10   w-xl">		<C_wNumber
-								number="1"
-								title="다양한 플랫폼 지원"
-								text="ustory zepeto zep을 이용한 홍보공간 제작 "
-
-							/></div>
-							<div className="op rounded-lg">
-								<Image src={"/space/academy.png"} alt={"school"} width="400" height="300"></Image>
-							</div>
-
-
-						</div>
-
-						<div className="flex flex-col sm:flex-row text-white justify-center px-10 mt-20">
-							<div className="op rounded-lg">
-								<Image src={"/space/academy.png"} alt={"school"} width="400" height="300"></Image>
-							</div>
-							<div className="mx-10  w-xl">		<C_wNumber
-								number="1"
-								title="커뮤니티 구축"
-								text="상담, 모임, 홍보, 교육등 다양한 콘텐츠 공간 개발"
-
-							/></div>
-						</div>
-
+						<Metaverse></Metaverse>
 
 					</div>
 				</div>

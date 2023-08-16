@@ -29,6 +29,7 @@
     "react-dom": "18.2.0",
     "smooth-scrollbar": "^8.8.4",
     "smooth-scrollbar-react": "^2.4.1",
+    "supabase": "^1.86.1",
     "tailwindcss": "3.3.3",
     "tailwindcss-gradients": "^3.0.0",
     "theme-change": "^2.5.0",
