@@ -1,4 +1,5 @@
 import C_feat_v from "@/src/components/C_feat_v";
+import C_gallery from "@/src/components/C_gallery";
 import Des from "@/src/components/Des";
 import G_normal from "@/src/components/G_normal";
 import T_1 from "@/src/components/T_1";
@@ -31,20 +32,14 @@ export default function Home() {
 
 			</div>
 			<T_1 title={"Metaverse"} text={"메타버스에서 만나는 홍보공간 "}></T_1>
+
 			<div className="min-h-screen ">
 
-				{/* 메타버스 */}
-				<div className="mt-5 mx-5 sm:mx-20 grid grid-cols-1 gap-3 sm:gap-4 sm:grid-cols-2 md:gap-6 xl:gap-8 py-10">
+				<C_gallery img={"bo"} title={"office"}></C_gallery>
 
-					{/*갤러리 작업 */}
-					<video autoPlay muted loop>
-						<source src="/metaverse.mp4" type="video/mp4" />
-						{/* Fallback content */}
-					</video>
+				{/*갤러리 작업 */}
+				<Gallery></Gallery>
 
-					<Gallery></Gallery>
-
-				</div>
 
 			</div>
 			<T_1 title={"etc"} text={"전시적 홍보 솔루션  "}></T_1>

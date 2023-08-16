@@ -3,8 +3,9 @@ interface L_timelineProp {
 	day: string;
 	title: string;
 	text: string;
+	img: string;
 }
-export default function L_timeline({ day, title, text }: L_timelineProp) {
+export default function L_timeline({ day, title, text, img }: L_timelineProp) {
 	return (
 
 		<li>
@@ -17,7 +18,7 @@ export default function L_timeline({ day, title, text }: L_timelineProp) {
 			</div>
 			<div className=" flex flex-col mb-6 ml-4 mt-2 items-center justify-center foot ">
 				<h4 className="mb-1.5 text-xl font-semibold">{title}</h4>
-				<Image src={"/space/academy.png"} alt={"school"} width="200" height="200"></Image>
+				<Image src={"/history/" + img + ".png"} alt={"school"} width="200" height="200"></Image>
 				<p className="mb-3 text-neutral-500 dark:text-neutral-300">{text}</p>
 			</div>
 		</li>

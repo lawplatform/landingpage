@@ -38,6 +38,8 @@ export default function Home() {
 		};
 	}, []);
 
+
+
 	return (
 		<>
 			<div className="min-h-screen">
@@ -52,12 +54,12 @@ export default function Home() {
 						<Btn_learnMore />
 						<div className="divider mt-10"></div>
 						<div className="flex flex-col sm:flex-row text-white justify-center px-10">
-							<div className="op rounded-lg">
+							<div className=" rounded-lg op">
 								<Image src={"/space/academy.png"} alt={"school"} width="400" height="300"></Image>
 							</div>
 							<div className="mx-10 w-xl ">		<C_wNumber
 								number="1"
-								title="효과적인 홍보"
+								title="메타버스 공간 제작"
 								text="메타버스를 통해 다양한 고객들을 만나보세요"
 
 							/></div>

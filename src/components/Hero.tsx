@@ -36,7 +36,7 @@ export default function Hero() {
 	return (
 		<div className="min-h-screen relative">
 			<div className="background-video">
-				<video autoPlay muted loop>
+				<video autoPlay muted loop className="absolute">
 					<source src="/main.mp4" type="video/mp4" />
 					{/* Fallback content */}
 				</video>
