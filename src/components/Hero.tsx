@@ -8,8 +8,8 @@ export default function Hero() {
 	useEffect(() => {
 		var scrollAnimation = anime({
 			targets: '.logo',
-			translateY: [200, 0],
-			delay: anime.stagger(100),
+			opacity: [0, 1],
+			duration: 3000,
 		});
 		const element = document.querySelector('.logo');
 		const intersectionObserver = new IntersectionObserver(

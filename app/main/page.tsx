@@ -42,7 +42,6 @@ export default function Home() {
 		<>
 			<div className="min-h-screen">
 				<Vision />
-				<h1> 고객의 가치를 최우선으로 실현합니다</h1>
 			</div>
 
 			<div className="min-h-screen  py-20 mx-auto bg-base-content">
@@ -67,7 +66,7 @@ export default function Home() {
 						<div className="flex flex-col-reverse sm:flex-row text-white justify-center px-10 mt-20">
 							<div className="mx-10   w-xl">		<C_wNumber
 								number="1"
-								title="다양함"
+								title="다양한 플랫폼 지원"
 								text="ustory zepeto zep을 이용한 홍보공간 제작 "
 
 							/></div>
