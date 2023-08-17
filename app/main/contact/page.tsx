@@ -5,7 +5,7 @@ import Form_basic from "@/src/components/Form_basic";
 export default function Home() {
 	return (
 		<>
-			<Form_basic></Form_basic>
+			<Contact></Contact>
 		</>
 	)
 }
