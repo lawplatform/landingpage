@@ -11,6 +11,8 @@ export async function POST() {
 	})
 
 	const data = await res.json()
-
 	return NextResponse.json(data)
 }
+
+
+
