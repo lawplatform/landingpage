@@ -8,8 +8,9 @@ import { useEffect, useState } from "react";
 import { themeChange } from "theme-change";
 import Timeline from "@/src/pages/Timeline";
 import Metaverse from "@/src/pages/Metaverse";
+import supabase from "@/src/util/supabase";
 
-export default function Home() {
+export default async function Home() {
 	const [see, setSee] = useState(false);
 	useEffect(() => {
 		themeChange(false);
@@ -39,6 +40,8 @@ export default function Home() {
 			}
 		};
 	}, []);
+
+
 
 	return (
 		<>
