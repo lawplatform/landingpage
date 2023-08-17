@@ -28,7 +28,6 @@ export default function Home() {
 				<T_1 title={"컨썰"} text={"컨썰턴트와 썰을 풀다"}></T_1>
 				<Conssul></Conssul>
 				<div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-1 sm:gap-4">
-
 					<C_feat_v img={"temp"} title={"메타버스 공간 상담 플랫폼"} text={"홍보에 필요한 메타버스 공간 제작"} />
 					<C_feat_v img={"temp"} title={"자료실 기능"} text={"자료 관리를 위한 자료실 제공"} />
 					<C_feat_v img={"temp"} title={"상담사를 위한 일정관리 "} text={"30분 단위로 유연한 스케줄 관리"} />
@@ -48,18 +47,6 @@ export default function Home() {
 				{/*갤러리 작업 */}
 				<Gallery></Gallery>
 
-
-			</div>
-			<T_1 title={"etc"} text={"전시적 홍보 솔루션  "}></T_1>
-			<div className=" min-h-screen bg-base-100">
-				{/* 상담 봇 서비스   */}
-
-				<div> hello Im cyber avatar.. :) </div>
-				{/* 상담 봇 서비스   */}
-			</div>
-			<div className=" min-h-screen bg-white">
-
-				{/* 기타 */}
 
 			</div>
 		</>

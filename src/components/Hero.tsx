@@ -12,25 +12,9 @@ export default function Hero() {
 			duration: 3000,
 		});
 		const element = document.querySelector('.logo');
-		const intersectionObserver = new IntersectionObserver(
-			(entries, observer) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						scrollAnimation.play();
-					}
-				});
-			}
-		);
-		if (element != null) {
-			intersectionObserver.observe(element);
-		}
-		return () => {
-			if (element != null) {
-				intersectionObserver.unobserve(element);
-			}
-		};
-	}, []);
+		scrollAnimation.play();
 
+	}, []);
 
 
 	return (

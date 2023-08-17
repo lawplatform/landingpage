@@ -15,9 +15,9 @@ export default function Timeline() {
 		const element = document.querySelector('.foot')
 		const intersectionObserver = new IntersectionObserver((entries, observer) => {
 			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
+				if (entry.isIntersecting && element !== null) {
 					scrollAnimation.play();
-
+					intersectionObserver.unobserve(element);
 				}
 			});
 		});
