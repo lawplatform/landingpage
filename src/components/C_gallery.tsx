@@ -23,8 +23,8 @@ export default function C_gallery({ img, title, text, link }: C_galleryProp) {
 				<p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
 					{text}
 				</p>
-				<button onClick={clickHandler} className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
-					더 알아보기
+				<button onClick={clickHandler} className="rounded-full bg-neutral-900  opacity-0 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60 transition-opacity duration-300 group-hover:opacity-100">
+					구경하기
 				</button>
 			</div>
 		</div>
