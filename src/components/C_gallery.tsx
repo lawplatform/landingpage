@@ -2,8 +2,12 @@ interface C_galleryProp {
 	img: string;
 	title: string;
 	text: string;
+	link: string;
 }
-export default function C_gallery({ img, title, text }: C_galleryProp) {
+export default function C_gallery({ img, title, text, link }: C_galleryProp) {
+	const clickHandler = () => {
+		window.open(link, "_blank");
+	}
 	return (
 		<div className="group relative w-full cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 photo">
 			<div className="h-96">
@@ -19,11 +23,9 @@ export default function C_gallery({ img, title, text }: C_galleryProp) {
 				<p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
 					{text}
 				</p>
-				{/*
-				<button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+				<button onClick={clickHandler} className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
 					더 알아보기
 				</button>
-				*/}
 			</div>
 		</div>
 	);

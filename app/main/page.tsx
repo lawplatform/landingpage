@@ -7,8 +7,9 @@ import anime from "animejs/lib/anime.js";
 import { useEffect, useState } from "react";
 import { themeChange } from "theme-change";
 import Timeline from "@/src/pages/Timeline";
-import Metaverse from "@/src/pages/Metaverse";
-import supabase from "@/src/util/supabase";
+import Metaverse from "@/src/pages/Metaverse_t";
+import C_wNumber from "@/src/components/C_wNumber";
+import Image from "next/image";
 
 export default async function Home() {
 	const [see, setSee] = useState(false);
@@ -56,15 +57,23 @@ export default async function Home() {
 						<EnterScene />
 						<Btn_learnMore />
 						<div className="divider mt-10"></div>
-						<Metaverse></Metaverse>
+						<Metaverse />
 					</div>
 				</div>
+
+
+
 			</div>
+
+
+
+
+
+
 			<h1
 				id="title"
 				className="mt-12 mb-5 text-4xl font-extrabold tracking-tight leading-none text-accent-content md:text-5xl lg:text-6xl  op"
-			>
-				History
+			>History
 			</h1>
 			<div className="divider"></div>
 			<div className=" min-h-screen mt-5  px-10 py-10 rounded-lg mb-5 max-w-[700px] mx-auto">

@@ -4,6 +4,7 @@ import DesWIcon from "../components/DesWIcon"
 import { useEffect } from "react";
 import anime from 'animejs/lib/anime.js';
 import C_feat from "../components/C_feat";
+import { supabase } from "../util/supabase";
 
 export default function Vision() {
 
@@ -20,8 +21,6 @@ export default function Vision() {
 
 
 	}, [])
-
-
 	return (
 		<>
 			<div className="mx-auto items-center justify-center flex flex-col lg:flex-row mb-3 px-2 lg:px-10">

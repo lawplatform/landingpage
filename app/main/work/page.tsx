@@ -19,8 +19,6 @@ export default function Home() {
 		return () => {
 		};
 	}, []);
-
-
 	return (
 		<>
 			<div className=" min-h-screen px-2 sm:px-20">
@@ -35,19 +33,12 @@ export default function Home() {
 					<C_feat_v img={"temp"} title={"수수료 무료"} text={"상담사를 위한 수수료 무료 서비스"} />
 					<C_feat_v img={"temp"} title={"다양한 공간 제공"} text={"36가지 youstory 기본 테마 제공"} />
 				</div>
-
 				{/* 컨썰 */}
-
 			</div>
 			<T_1 title={"Metaverse"} text={"메타버스에서 만나는 홍보공간 "}></T_1>
-
 			<div className="min-h-screen ">
-
-
 				{/*갤러리 작업 */}
 				<Gallery></Gallery>
-
-
 			</div>
 		</>
 	);
