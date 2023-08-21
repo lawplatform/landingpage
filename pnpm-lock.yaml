@@ -11,6 +11,9 @@ dependencies:
   '@babylonjs/gui':
     specifier: ^6.15.0
     version: 6.15.0(@babylonjs/core@6.15.0)
+  '@babylonjs/loaders':
+    specifier: ^6.17.0
+    version: 6.17.0(@babylonjs/core@6.15.0)(babylonjs-gltf2interface@6.17.0)
   '@hookform/resolvers':
     specifier: ^3.2.0
     version: 3.2.0(react-hook-form@7.45.4)
@@ -1707,6 +1710,16 @@ packages:
       '@babylonjs/core': ^6.0.0
     dependencies:
       '@babylonjs/core': 6.15.0
+    dev: false
+
+  /@babylonjs/loaders@6.17.0(@babylonjs/core@6.15.0)(babylonjs-gltf2interface@6.17.0):
+    resolution: {integrity: sha512-e55RhG5ubbzwJ7XzXEPfEBpOI7OpfjxgDAiwdXGy5UpWVCU4X9XBG0PPke1IM3NNt5dKRGY9GnPlAR+aI2zjCw==}
+    peerDependencies:
+      '@babylonjs/core': ^6.0.0
+      babylonjs-gltf2interface: ^6.0.0
+    dependencies:
+      '@babylonjs/core': 6.15.0
+      babylonjs-gltf2interface: 6.17.0
     dev: false
 
   /@cnakazawa/watch@1.0.4:
@@ -3483,6 +3496,10 @@ packages:
   /babylon@6.18.0:
     resolution: {integrity: sha512-q/UEjfGJ2Cm3oKV71DJz9d25TPnq5rhBVL2Q4fA5wcC3jcrdn7+SssEybFIxwAvvP+YCsCYNKughoF33GxgycQ==}
     hasBin: true
+    dev: false
+
+  /babylonjs-gltf2interface@6.17.0:
+    resolution: {integrity: sha512-AmWkhrMNbktbUwMXQVXoPheuU41CCNdCDizg2Yqu5kxIhQo/Iq5oR3LabjTXEX/3FSnANcSn/COM7yD74jBS8A==}
     dev: false
 
   /balanced-match@1.0.2:
