@@ -19,7 +19,6 @@ const A = () => {
 		// This creates a light, aiming 0,1,0 - to the sky (non-mesh)
 		const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
 		light.intensity = 5;
-		let city: any;
 		//load city background 
 		const result = SceneLoader.ImportMeshAsync(null, "/glb/", "city.glb", scene).then((result) => {
 			city = result.meshes[0];
