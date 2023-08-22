@@ -44,7 +44,9 @@ const A = () => {
 	 * Will run on every frame render.  We are spinning the box on y-axis.
 	 */
 	const onRender: OnRenderHandler = (scene) => {
-		if (city !== undefined) {
+		console.log("renderitnginignign");
+
+		if (city != undefined) {
 			var deltaTimeInMillis = scene.getEngine().getDeltaTime()
 
 			const rpm = 10

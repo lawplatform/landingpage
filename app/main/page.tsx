@@ -11,7 +11,7 @@ import Metaverse from "@/src/pages/Metaverse_t";
 import C_wNumber from "@/src/components/C_wNumber";
 import Image from "next/image";
 
-export default async function Home() {
+export default function Home() {
 	const [see, setSee] = useState(false);
 	useEffect(() => {
 		themeChange(false);
