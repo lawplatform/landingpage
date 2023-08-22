@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "^4.32.1",
-    "daisyui": "^3.5.1"
+    "daisyui": "^3.5.1",
+    "encoding": "^0.1.13"
   }
 }

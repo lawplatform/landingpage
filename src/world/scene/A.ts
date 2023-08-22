@@ -16,7 +16,6 @@ const A = () => {
 		const canvas = scene.getEngine().getRenderingCanvas()
 		// This attaches the camera to the canvas
 		camera.attachControl(canvas, true)
-
 		// This creates a light, aiming 0,1,0 - to the sky (non-mesh)
 		const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
 		light.intensity = 5;
@@ -29,7 +28,6 @@ const A = () => {
 			city.position.z = -3;
 
 		});
-
 		//Death of field Effect
 		var lensEffect = new BABYLON.LensRenderingPipeline('lens', {
 			edge_blur: 1.0,
