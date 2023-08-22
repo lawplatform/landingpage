@@ -25,8 +25,8 @@ export default function Vision() {
 		<>
 			<div className="mx-auto items-center justify-center flex flex-col lg:flex-row mb-3 px-2 lg:px-10">
 				<div className="flex flex-col items-center w-2/3">
-					<div className="flex items-center justify-center">
-						<Image src={"/temp/world.svg"} width="100" height="80" alt={""}></Image>
+					<div className="flex items-center justify-center mt-5">
+						<Image src={"/world.svg"} width="300" height="20" alt={""}></Image>
 					</div>
 					<h1 id="title" className="mt-12 mb-5 text-4xl font-extrabold tracking-tight leading-none text-primary-content-900 md:text-5xl lg:text-6xl dark:text-whiteop">VISION</h1>
 
