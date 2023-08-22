@@ -36,9 +36,9 @@ export default function Vision() {
 					</div>
 				</div>
 				<div className="mt-10 mb-10 md:flex">
-					<C_feat title="혁신" desc="새로운 경험과 기술을 추구하여 끊임없이 발전" img="temp" />
-					<C_feat title="다양성" desc="상호작용을 촉진하여, 포용적인 문화 구축" img="temp" />
-					<C_feat title="신뢰" desc="소통을 통한 신뢰 구축, 공정한 관리와 운영을 지향" img="temp" />
+					<C_feat title="혁신" desc="새로운 경험과 기술을 추구하여 끊임없이 발전" img="evolve" />
+					<C_feat title="다양성" desc="상호작용을 촉진하여, 포용적인 문화 구축" img="variation" />
+					<C_feat title="신뢰" desc="소통을 통한 신뢰 구축, 공정한 관리와 운영을 지향" img="sheild" />
 				</div>
 			</div >
 		</>
