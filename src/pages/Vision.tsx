@@ -11,7 +11,7 @@ export default function Vision() {
 
 	useEffect(() => {
 		var scrollAnimation = anime({
-			targets: '.op',
+			targets: '.c_feat',
 			translateY: [-40, 0],
 			opacity: [0, 1],
 			easing: 'easeInOutExpo',
