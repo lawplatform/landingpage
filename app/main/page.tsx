@@ -10,6 +10,7 @@ import Timeline from "@/src/pages/Timeline";
 import Metaverse from "@/src/pages/Metaverse_t";
 import C_wNumber from "@/src/components/C_wNumber";
 import Image from "next/image";
+import KaKaoMap from "@/src/components/KaKaoMap";
 
 export default function Home() {
 	const [see, setSee] = useState(false);
@@ -65,11 +66,6 @@ export default function Home() {
 
 			</div>
 
-
-
-
-
-
 			<h1
 				id="title"
 				className="mt-12 mb-5 text-4xl font-extrabold tracking-tight leading-none text-accent-content md:text-5xl lg:text-6xl  op"
@@ -80,6 +76,16 @@ export default function Home() {
 				<div className="mx-auto text-center font-light sm:text-lg dark:text-gray-400"></div>
 				<Timeline />
 			</div>
+			<h1
+				id="title"
+				className="mt-12 mb-5 text-4xl font-extrabold tracking-tight leading-none text-accent-content md:text-5xl lg:text-6xl  op"
+			>Location
+			</h1>
+			<div className="divider"></div>
+			<KaKaoMap />
+			<p className="text-sm leading-6 text-base-content-30 mt-5 mb-5">
+				경기 고양시 일산동구 장백로 204 보람빌딩 302-303호
+			</p>
 		</>
 	);
 }

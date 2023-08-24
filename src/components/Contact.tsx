@@ -35,7 +35,7 @@ export default function Contact() {
 			<h1 id="title" className="mt-12 mb-5 text-4xl font-extrabold tracking-tight leading-none text-primary-content-900 md:text-5xl lg:text-6xl dark:text-whiteop">문의하기</h1>
 
 			<div className=" px-24">
-				<p className=" py-6  op">무엇이든 물어보세요 </p>
+				<p className=" py-6  op">로플랫폼에 관련된 모든 문제와 문의사항에 대해 담당자가 최대한 빨리 답변드리겠습니다. </p>
 			</div>
 
 			<div className="py-8 lg:py-16  mx-1 max-w-container  sm:px-2 md:px-52">

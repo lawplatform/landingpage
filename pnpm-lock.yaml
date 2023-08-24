@@ -74,6 +74,9 @@ dependencies:
   react-hook-form:
     specifier: ^7.45.4
     version: 7.45.4(react@18.2.0)
+  react-kakao-maps-sdk:
+    specifier: ^1.1.11
+    version: 1.1.11(react-dom@18.2.0)(react@18.2.0)
   smooth-scrollbar:
     specifier: ^8.8.4
     version: 8.8.4
@@ -8235,6 +8238,10 @@ packages:
       object.values: 1.1.6
     dev: false
 
+  /kakao.maps.d.ts@0.1.38:
+    resolution: {integrity: sha512-ub3ITsp/XfM7OikRvnsQiK6oZgyqVKVvGm9bmChudfDRjFa6xrS2O/bLNs0EyFCQZufVBXLLJK9+T06LOYxNiw==}
+    dev: false
+
   /killable@1.0.1:
     resolution: {integrity: sha512-LzqtLKlUwirEUyl/nicirVmNiPvYs7l5n8wOPP7fyJVpUPkvCnW/vuiXGpylGUlnPDnB7311rARzAt3Mhswpjg==}
     dev: false
@@ -10744,6 +10751,17 @@ packages:
 
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
+  /react-kakao-maps-sdk@1.1.11(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-L3hHa7tvVCxEvU3R4DODctLQMNMEqUUkWweSgVrD/9qndeB3+Fk5FUUFRW5muVghwr4PQ2fzR1jhk6vO35TDaA==}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      kakao.maps.d.ts: 0.1.38
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react-reconciler@0.27.0(react@18.2.0):

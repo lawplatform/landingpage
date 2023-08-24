@@ -32,6 +32,7 @@
     "react-babylonjs": "^3.1.17",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.45.4",
+    "react-kakao-maps-sdk": "^1.1.11",
     "smooth-scrollbar": "^8.8.4",
     "smooth-scrollbar-react": "^2.4.1",
     "supabase": "^1.86.1",
