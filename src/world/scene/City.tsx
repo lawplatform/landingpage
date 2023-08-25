@@ -27,7 +27,7 @@ const City: FC = ({
 
 			var fountain = BABYLON.Mesh.CreateBox("foutain", 0.01, scene);
 			fountain.position.x = 0.6;
-			fountain.position.y = -0.5;
+			fountain.position.y = -0.8;
 			fountain.position.z = 1.4;
 			// Create a particle system
 			var particleSystem = new BABYLON.ParticleSystem("particles", 100, scene);
