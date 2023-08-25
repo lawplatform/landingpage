@@ -42,14 +42,14 @@ export default function Metaverse() {
 		<div id="des">
 			<div className="flex flex-col sm:flex-row text-white justify-center px-10">
 				<div className=" rounded-lg des">
-					<Image src={"/space/academy.png"} alt={"school"} width="400" height="300"></Image>
+					<Image src={"/space/office.png"} alt={"school"} width="400" height="300"></Image>
 				</div>
 				<div className="mx-10 w-xl  ">
 
 					<div className="flex flex-col  justify-start mx-2 mt-10 text-center pb-36 des">
 						<h1 className="text-3xl text-base-200 text-start">{"가상 공간 제작"}</h1>
 						<div className="mt-3 w-20 h-1 bg-white border-b-2 border-white"></div>
-						<p className="mt-5 text-base-300">{"메타버스를 통해 다양한 고객들을 만나보세요 "} </p>
+						<p className="mt-5 text-base-300">{"메타버스 플랫폼을 통한 가상 공간 제작"} </p>
 					</div>
 
 				</div>
@@ -57,14 +57,14 @@ export default function Metaverse() {
 
 			<div className="flex flex-col sm:flex-row text-white justify-center px-10">
 				<div className=" rounded-lg des">
-					<Image src={"/space/academy.png"} alt={"school"} width="400" height="300"></Image>
+					<Image src={"/space/lawgallery.png"} alt={"school"} width="400" height="300"></Image>
 				</div>
 				<div className="mx-10 w-xl  ">
 
 					<div className="flex flex-col  justify-start mx-2 mt-10 text-center pb-36 des">
-						<h1 className="text-3xl text-base-200 text-start">{"가상 공간 제작"}</h1>
+						<h1 className="text-3xl text-base-200 text-start">{"다양한 플랫폼 기반 제작"}</h1>
 						<div className="mt-3 w-20 h-1 bg-white border-b-2 border-white"></div>
-						<p className="mt-5 text-base-300">{"메타버스를 통해 다양한 고객들을 만나보세요 "} </p>
+						<p className="mt-5 text-base-300">{"youstory, zepeto, zep, roblox 기반 공간 제작 "} </p>
 					</div>
 
 
@@ -73,7 +73,7 @@ export default function Metaverse() {
 
 			<div className="flex flex-col sm:flex-row text-white justify-center px-10 ">
 				<div className="des rounded-lg">
-					<Image src={"/space/academy.png"} alt={"school"} width="400" height="300"></Image>
+					<Image src={"/space/party.jpg"} alt={"school"} width="400" height="300"></Image>
 				</div>
 				<div className="mx-10  w-xl">
 
