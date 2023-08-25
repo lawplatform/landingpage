@@ -72,7 +72,7 @@ export default function Home() {
 						</div>
 						<h1 id="title" className="mt-12 mb-5 text-4xl font-extrabold tracking-tight leading-none text-primary-content-900 md:text-5xl lg:text-6xl dark:text-whiteop">VISION</h1>
 
-						<div className=" px-24">
+						<div className=" px-24 w-full">
 							<p className=" py-2 mb-20  op">제약을 넘는 새로운 세상을 창조합니다 </p>
 
 						</div>
