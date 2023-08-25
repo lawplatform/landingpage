@@ -26,11 +26,10 @@ const City: FC = ({
 
 
 			var fountain = BABYLON.Mesh.CreateBox("foutain", 0.01, scene);
-			fountain.position.x = 0.6;
-			fountain.position.y = -0.5;
-			fountain.position.z = 1.4;
+
 			// Create a particle system
 			var particleSystem = new BABYLON.ParticleSystem("particles", 100, scene);
+			particleSystem.position.x = 5;
 			//Texture of each particle
 			particleSystem.particleTexture = new BABYLON.Texture("/textures/flare.png", scene);
 
@@ -53,7 +52,7 @@ const City: FC = ({
 			particleSystem.maxLifeTime = 1.5;
 
 			// Emission rate
-			particleSystem.emitRate = 200;
+			particleSystem.emitRate = 1500;
 
 			// Blend mode : BLENDMODE_ONEONE, or BLENDMODE_STANDARD
 			particleSystem.blendMode = BABYLON.ParticleSystem.BLENDMODE_ONEONE;
