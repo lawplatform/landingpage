@@ -1,5 +1,5 @@
 import './globals.css'
-import type { Metadata } from 'next'
+import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Provider from '@/src/components/Provider'
 import Footer from '@/src/components/Footer'
@@ -8,7 +8,6 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
 	title: '로플랫폼',
 	description: '메타버스 제작 전문 기업',
-
 	openGraph: {
 		title: '로플랫폼',
 		description: '메타버스 제작 기업 로플랫폼입니다',
@@ -27,7 +26,6 @@ export const metadata: Metadata = {
 				alt: '로플랫폼 로고',
 			},
 		],
-		locale: 'en_US',
 		type: 'website',
 	},
 };
