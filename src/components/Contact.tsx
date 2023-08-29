@@ -4,6 +4,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import validator from "validator";
 import { ZodObject, ZodType, z } from "zod";
 import { zodResolver } from '@hookform/resolvers/zod';
+import { supabase } from "../util/supabase";
 
 
 interface IAuthForm {
@@ -25,7 +26,20 @@ export default function Contact() {
 	} = useForm<IAuthForm>({ mode: 'onBlur' });
 
 
-	const submitData: SubmitHandler<IAuthForm> = (data) => console.log(data);
+	const submitData: SubmitHandler<IAuthForm> = async (input) => {
+		const { data, error } = await supabase
+			.from('asking')
+			.insert([
+				{ name: input.name, phone: input.phone, title: input.title, text: input.text },
+			])
+			.select()
+
+		console.log("insert complete");
+		console.log(data);
+
+
+
+	}
 
 	return (
 		<>
