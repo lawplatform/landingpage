@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /admin*/
-Allow: /$
+Allow: /
+Sitemap: https://law-landing.vercel.app/sitemap.xml
