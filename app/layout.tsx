@@ -9,6 +9,27 @@ export const metadata: Metadata = {
 	title: '로플랫폼',
 	description: '메타버스 제작 전문 기업',
 	keywords: ['zep', 'zepeto', '메타버스'],
+	openGraph: {
+		title: '로플랫폼',
+		description: '메타버스 제작 기업 로플랫폼입니다',
+		url: 'https://law-landing.vercel.app/',
+		siteName: '로플랫폼',
+		images: [
+			{
+				url: 'https://law-landing.vercel.app/logo/logo.png',
+				width: 800,
+				height: 600,
+			},
+			{
+				url: 'https://law-landing.vercel.app/logo/logo.png',
+				width: 1800,
+				height: 1600,
+				alt: '로플랫폼 로고',
+			},
+		],
+		type: 'website',
+	},
+
 };
 
 export default function RootLayout({
