@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: '로플랫폼',
-	description: '메타버스 제작 전문 기업'
+	description: '메타버스 제작 전문 기업',
+	keywords: ['zep', 'zepeto', '메타버스'],
 };
 
 export default function RootLayout({
