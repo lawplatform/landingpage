@@ -7,11 +7,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: '로플랫폼',
-	description: '메타버스 제작 전문 기업',
+	description: '메타버스 콘텐츠 제작 기업',
 	keywords: ['zep', 'zepeto', '메타버스'],
 	openGraph: {
 		title: '로플랫폼',
-		description: '메타버스 제작 기업 로플랫폼입니다',
+		description: '메타버스 기획, 메타버스 월드 구축, 컨썰플랫폼, 메타버스 행사 운영 지원',
 		url: 'https://law-landing.vercel.app/',
 		siteName: '로플랫폼',
 		images: [
