@@ -19,6 +19,7 @@ interface IAuthForm {
 export default function Contact() {
 
 	const {
+		reset,
 		register,
 		formState: { errors },
 		handleSubmit,
@@ -33,9 +34,9 @@ export default function Contact() {
 				{ name: input.name, phone: input.phone, title: input.title, text: input.text },
 			])
 			.select()
-
 		console.log("insert complete");
 		console.log(data);
+		reset();
 
 
 
