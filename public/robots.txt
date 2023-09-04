@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /admin*/
 Allow: /
-Sitemap: https://law-landing.vercel.app/sitemap.xml
+Sitemap: https://www.lawplatform.kr/sitemap.xml
