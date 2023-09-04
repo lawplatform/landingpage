@@ -102,7 +102,7 @@ export default function Contact() {
 						<label htmlFor="내용" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">내용</label>
 						<textarea id="message" rows={6} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="내용을 남겨주세요..."  {...register("text")}></textarea>
 					</div>
-					<input type="submit" className="btn btn-neutral" >확인</input>
+					<input type="submit" className="btn btn-neutral" />
 				</form >
 			</div >
 		</>
