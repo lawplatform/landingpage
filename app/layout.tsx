@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: '로플랫폼',
-	description: '메타버스 콘텐츠 제작 기업',
+	description: '메타버스 기반, 콘텐츠 제작 기업',
 	keywords: ['zep', 'zepeto', '메타버스'],
 	openGraph: {
 		title: '로플랫폼',
