@@ -15,7 +15,8 @@ import C_feat from "@/src/components/C_feat";
 import SceneContainer from "@/src/world/SceneContainer";
 import City from "@/src/world/scene/City";
 import Logo from "@/src/world/scene/Logo";
-
+import Script from "next/script";
+const baseURL = "//dapi.kakao.com/v2/maps/sdk.js?appkey=6446daaa47bec9c457b2b6d23558b3cc&autoload=false"
 export default function Home() {
 	const [see, setSee] = useState(false);
 	useEffect(() => {
@@ -64,7 +65,7 @@ export default function Home() {
 	return (
 		<>
 			<div className="min-h-screen">
-
+				<Script src={baseURL} strategy="beforeInteractive" />
 				<div className="mx-auto items-center justify-center flex flex-col lg:flex-row mb-3 px-2 lg:px-10">
 					<div className="flex flex-col items-center w-2/3">
 						<div className="flex items-center justify-center mt-5">
