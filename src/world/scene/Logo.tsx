@@ -1,12 +1,9 @@
 // import "@babylonjs/inspector";
-import { Color3, Color4 } from '@babylonjs/core/Maths/math.color'
 import { Vector3 } from '@babylonjs/core/Maths/math.vector'
 import { AbstractMesh } from '@babylonjs/core/Meshes/abstractMesh'
 import React, { FC, Suspense, useEffect, useRef, useState } from 'react'
-import * as BABYLON from "@babylonjs/core";
 import { Engine, ILoadedModel, Model, Scene, useBeforeRender, useScene } from 'react-babylonjs'
 import "@babylonjs/loaders/glTF";
-import { LensRenderingPipeline } from '@babylonjs/core'
 const Logo: FC = ({
 }) => {
 	let baseUrl = '/glb/';
@@ -18,7 +15,6 @@ const Logo: FC = ({
 	}
 	useEffect(() => {
 		if (scene != null) {
-			//add fog effect 
 		}
 		if (modelRef.current) {
 		}

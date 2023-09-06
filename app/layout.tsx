@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: '로플랫폼',
-	description: '메타버스 기반, 콘텐츠 제작 기업',
+	description: '메타버스 기반 콘텐츠 제작 기업',
 	keywords: ['zep', 'zepeto', '메타버스'],
 	openGraph: {
 		title: '로플랫폼',
@@ -38,6 +38,11 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<link rel="icon" href="/favicon.ico" sizes="any" />
+			<link
+				rel="apple-touch-icon"
+				href="/favicon.ico"
+				sizes="any"
+			/>
 			<body className={inter.className}>
 				<Provider>
 					<div className='text-center items-center justify-center'>

@@ -1,9 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useForm, SubmitHandler } from "react-hook-form";
-import validator from "validator";
-import { ZodObject, ZodType, z } from "zod";
-import { zodResolver } from '@hookform/resolvers/zod';
 import { supabase } from "../util/supabase";
 
 
@@ -72,9 +69,6 @@ export default function Contact() {
 								required: '휴대폰 번흐를 입력해주세요.',
 							},
 							)} />
-
-
-
 						</div>
 
 
