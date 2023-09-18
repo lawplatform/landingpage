@@ -1,4 +1,5 @@
 import { Vector3 } from '@babylonjs/core'
+import { FC } from 'react';
 import { Engine, Scene, Camera } from 'react-babylonjs'
 const SceneContainer: FC = ({ children }) => (
 	<div style={{ flex: 1, display: 'flex bg-transparent' }}>

@@ -2,6 +2,7 @@ import './globals.css'
 import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Provider from '@/src/components/Provider'
+import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -44,6 +45,10 @@ export default function RootLayout({
 				sizes="any"
 			/>
 			<body className={inter.className}>
+				<Script
+					src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6446daaa47bec9c457b2b6d23558b3cc.&libraries=services,clusterer&autoload=false"
+					strategy="beforeInteractive"
+				/>
 				<Provider>
 					<div className='text-center items-center justify-center'>
 						{children}

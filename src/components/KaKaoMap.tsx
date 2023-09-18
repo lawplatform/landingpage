@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Script from 'next/script';
 import { Map, MapMarker } from 'react-kakao-maps-sdk';
 export default function KaKaoMap() {
 	return (
