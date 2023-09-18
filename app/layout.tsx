@@ -31,6 +31,14 @@ export const metadata: Metadata = {
 	},
 
 };
+
+declare global {
+	interface Window {
+		kakao: any;
+	}
+}
+
+
 export default function RootLayout({
 	children,
 }: {
@@ -45,11 +53,13 @@ export default function RootLayout({
 				sizes="any"
 			/>
 			<body className={inter.className}>
-				<Script
-					src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6446daaa47bec9c457b2b6d23558b3cc.&libraries=services,clusterer&autoload=false"
-					strategy="beforeInteractive"
-				/>
+
 				<Provider>
+					<Script
+						src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6446daaa47bec9c457b2b6d23558b3cc&autoload=false"
+						strategy="beforeInteractive"
+					/>
+					<Script src="https://developers.kakao.com/sdk/js/kakao.js" async />
 					<div className='text-center items-center justify-center'>
 						{children}
 					</div></Provider>

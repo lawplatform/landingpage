@@ -15,6 +15,8 @@ import C_feat from "@/src/components/C_feat";
 import SceneContainer from "@/src/world/SceneContainer";
 import City from "@/src/world/scene/City";
 import Logo from "@/src/world/scene/Logo";
+import MyMap from "@/src/components/Map";
+import MyKakaoMap from "@/src/components/MyKaKaoMap";
 export default function Home() {
 	const [see, setSee] = useState(false);
 	useEffect(() => {
@@ -117,7 +119,7 @@ export default function Home() {
 			<div className="mx-auto bg-base-content">
 				<div className="py-10">
 					<Des Title={"Location"} Text={"찾아오시는 길"} />
-					<KaKaoMap />
+					<MyKakaoMap />
 					<p className="text-sm leading-6 text-base-content-30 mt-5 mb-5">
 						경기 고양시 일산동구 장백로 204 보람빌딩 302-303호
 					</p>
