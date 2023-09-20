@@ -7,7 +7,7 @@ interface C_feat_v_prop {
 export default function C_feat_v({ img, title, text }: C_feat_v_prop) {
 
 	return (
-		<div className="group transition-opacity duration-150 ease-out transition-transform hover:scale-105">
+		<div className="group transition-opacity duration-150 ease-out transition-transform hover:scale-101">
 			<div className="p-2 feat sm:p-10 bg-base-100 min-w-50 rounded-2xl border border-slate-300 mb-3 mx-1 op mt-2 justify-center sm:justify-start ">
 
 				<div className="flex flex-row  mb-5  px-10 sm:px-1">
