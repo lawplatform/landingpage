@@ -38,7 +38,7 @@ export default function Gallery() {
 		<div className="flex flex-col bg-red-500  auto-cols-auto ">
 			<div className="flex flex-row photo">
 				<C_gallery img={"bo"} title={"office"} text={"zepeto로 구현된 가상 오피스 입니다"} link={"https://web.zepeto.me/ko/detail/LIXyq3wK879tKCWsdrrnXs7?referrer=copylink_share"}></C_gallery>
-				<C_gallery img={"prame8"} title={"office-prame"} text={"상담 및 교육이 가능한 youstory 공간입니다"} link={"https://youstory.io/conssul-prame8"}></C_gallery>
+				<C_gallery img={"prame8"} title={"room03"} text={"상담이 가능한 youstory 공간입니다"} link={"https://youstory.io/room03"}></C_gallery>
 			</div>
 			<video autoPlay muted loop className="w-full h-60 flex">
 				<source src="/metaverse.mp4" type="video/mp4" />
