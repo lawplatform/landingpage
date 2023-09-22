@@ -1,10 +1,12 @@
 import './globals.css'
 import { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Noto_Sans_KR } from 'next/font/google'
 import Provider from '@/src/components/Provider'
 import Script from 'next/script'
-const inter = Inter({ subsets: ['latin'] })
-
+const noto = Noto_Sans_KR({
+	subsets: ['latin'],
+	weight: '400'
+})
 export const metadata: Metadata = {
 	title: '로플랫폼',
 	description: '메타버스 기반 콘텐츠 제작 기업',
@@ -45,14 +47,14 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html lang="en">
+		<html lang="en" className={noto.className}>
 			<link rel="icon" href="/favicon.ico" sizes="any" />
 			<link
 				rel="apple-touch-icon"
 				href="/favicon.ico"
 				sizes="any"
 			/>
-			<body className={inter.className}>
+			<body className={noto.className}>
 
 				<Provider>
 					<Script
